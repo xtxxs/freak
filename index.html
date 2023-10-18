@@ -6,7 +6,7 @@
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="TweenMax.min.js"></script>
     <script type="text/javascript" src="vue.global.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="var" href="freak2.html">
   <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
@@ -25,7 +25,7 @@
       body {
           background-size:cover;
           font-family: "Open Sans", sans-serif;
-          background-image: url("https://wallpapercave.com/wp/wp8047359.jpg");
+          background-image: url("https://images2.alphacoders.com/127/1279247.png");
           font-size: 1.8rem;
       }
 
@@ -50,12 +50,12 @@
       }
 
       h2 {
-          color: #fff;
+          color: #f3efef;
           margin: 1rem 0;
       }
 
       p {
-          color: #ddd;
+          color: #e43737;
           font-size: 1.3rem;
           margin: 1rem 0;
       }
@@ -68,7 +68,7 @@
       button {
           padding: 1rem 2rem;
           border: none;
-          color: rgb(24, 24, 24);
+          color: rgb(22, 22, 22);
           background: #ddd;
           cursor: pointer;
           border-radius: 2px;
@@ -93,7 +93,7 @@
       }
 
       .form-container {
-          background: rgba(255,255,255,.8);
+          background: transparent;
           padding: 5rem;
           height: 40rem;
           border-radius: 4px;
@@ -102,7 +102,7 @@
       }
 
       h3 {
-          color: rgb(65, 65, 65);
+          color: rgb(248, 243, 243);
           font-size: 2.5rem;
           margin-bottom: 1rem;
           text-align: center;
@@ -124,14 +124,14 @@
       input {
           padding: 1rem 2.4rem;
           border-radius: 2px;
-          border: 1px solid rgb(128, 128, 128);
+          border: 1px solid rgb(17, 16, 16);
           outline: none;
           width: 100%;
       }
 
       .form-button {
           background:#f14747;
-          color: #fff;
+          color: #f3ecec;
           outline: none;
           box-shadow: 0 4px 4px rgba(0, 0, 0, 0.22);
       }
@@ -169,7 +169,7 @@
       }
 
           .social-container a {
-              border: 1px solid #dddddd;
+              border: 1px solid #d61010;
               border-radius: 50%;
               display: inline-flex;
               justify-content: center;
@@ -188,59 +188,80 @@
 
 
 <body>
-    <div class="form-container signup-form">
-        <form action="">
-            <h3>INNQUISITOR (692870364) </h3>
-            <div class="social-container">
-                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social">
-                    <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="input-container">
-                <input type="text" placeholder="" value="Freak" readonly="true">
-            </div>
-            <div class="input-container">
-                <input id="password" type="text" placeholder="Password">
-            </div>
+    <div class="container">
+        <div class="signin-container" id="cont1">
+            <h2>What are you looking at?</h2>
+            <p>
+                Private Space
+            </p>
+            <button id="login">Return</button>
+        </div>
+        <div class="signin-container">
+            <h2>What are you looking at?</h2>
+            <p>
+                Bye!
+            </p>
+            <p id="attempts2">  </p>
+            <p id="attempts">Attempts: 3</p>
+            <button id="login">Return</button>
+        </div>
+        <div class="overlay" id="slide">
+            <div class="form-container signup-form">
+                <form action="">
+                    <h3>Innquisitor</h3>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" placeholder="" value="Freak" readonly="true">
+                    </div>
+                    <div class="input-container">
+                        <input id="password" type="text" placeholder="password">
+                    </div>
 
 
-            <button class="form-button" onclick="comprobarClave()" type="button">
-                Access
-                <script>
-                    var x = 3;
-                    function comprobarClave() {
-                        clave1 = document.getElementById("password").value;
+                    <button class="form-button" onclick="comprobarClave()" type="button">
+                        Access
+                        <script>
+                            var x = 3;
+                            function comprobarClave() {
+                                clave1 = document.getElementById("password").value;
 
-                        if (clave1 == "sukuna") {
-                            var url = "freak2.html";
-                            $(location).attr('href', url);
-                        }
-                        else {/* document.getElementById("accd").textContent = "ACCESS DENIED";*/
-                            x--;
-                            document.getElementById("attempts").textContent = "Attempts: " + x;
-                            if (x == 2) {
-                                document.getElementById("attempts").textContent = "Attempts: " + x;
-                                document.getElementById("attempts2").textContent = "Bad Pass! Sure u're invited?";
+                                if (clave1 == "Sukuna") {
+                                    var url = "freak2.html";
+                                    $(location).attr('href', url:);
+                                }
+                                else {/* document.getElementById("accd").textContent = "ACCESS DENIED";*/
+                                    x--;
+                                    document.getElementById("attempts").textContent = "Attempts: " + x;
+                                    if (x == 2) {
+                                        document.getElementById("attempts").textContent = "Attempts: " + x;
+                                        document.getElementById("attempts2").textContent = "Bad Pass! Sure u're invited?";
+                                    }
+                                    if (x == 1) {
+                                        document.getElementById("attempts").textContent = "Attempts: " + x;
+                                        document.getElementById("attempts2").textContent = "You'll be redirected. Last chance!";
+                                    }
+                                    if (x == 0) {
+                                        document.getElementById("attempts2").textContent = "Bye!";
+                                        var url = "https://google.com";
+                                        $(location).attr('href', url);
+                                    }
+                                    else { }
+                                }
+
                             }
-                            if (x == 1) {
-                                document.getElementById("attempts").textContent = "Attempts: " + x;
-                                document.getElementById("attempts2").textContent = "You'll be redirected. Last chance!";
-                            }
-                            if (x == 0) {
-                                document.getElementById("attempts2").textContent = "Bye!";
-                                var url = "https://google.com";
-                                $(location).attr('href', url);
-                            }
-                            else { }
-                        }
+                        </script>
+                    </button>
+                </form>
+            </div>
 
-                    }
-                </script>
-            </button>
-        </form>
-    </div>
+
+        </div>
 
     </div>
     <div id="crdts">
