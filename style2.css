@@ -1,0 +1,179 @@
+a { text-decoration: none; }
+
+body {
+    background-image: url(https://i.ibb.co/NWj3tzm/HD-wallpaper-megumi-fushiguro-with-wolf-jujutsu-kaisen-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+	  background-position: center center;
+  }
+
+:root {
+    --background: #262626;
+    --foreground: #dddddd;
+    --bodyreg: montserrat;
+    --accent: #52807f; 
+    --accenthalf: rgba(80, 128, 127, .5);
+    --accenttrans: rgba(82, 128, 127, .2);
+    --accentpartial: rgba(82, 128, 127, .6);
+    --titlemedium: ptmedium;
+    --titlelight: ptlight;
+}
+
+@font-face {
+  font-family: ptmedium;
+  src:url('https://files.jcink.net/uploads/noctuary/Skin___Historia/FuturaPTMedium.otf'); 
+  format("opentype");
+}
+
+@font-face {
+    font-family: ptlight; 	      
+  src:url('https://files.jcink.net/uploads/noctuary/Skin___Historia/FuturaPTLight.otf'); 
+	format("opentype");
+	}
+
+.buried { 
+  height: 400px;
+  width: 500px;
+  background: #c1bfbf;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  border:1px solid var(--accent);
+}
+
+.insideme { 
+  height: 400px;
+  width: 500px;
+  position: relative;
+  transition: 1.5s;
+  top: 20px;
+  margin-top: -417px;
+  -webkit-transition: 1.5s;
+  display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+.buried:hover .insideme {
+  top: -400px;
+}
+
+.buried:hover .buried-post {
+    display:block
+}
+
+.buried-post { 
+    position: relative;
+    width: 495px;
+    height: 395px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(35, 35, 35, 0.5); }
+
+.bury {     
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-family: var(--bodyreg);
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.bury-post {
+  margin-top: 20px;
+  position: relative;
+  overflow: auto;
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 20px 50px 20px;
+  line-height: 140%;
+  height: 300px;
+  text-align: justify;
+  font-family: var(--bodyreg);
+  color: rgba(0,0,0,1);
+  background-color: rgba(260,260,260,.4)}
+
+.bury-post::-webkit-scrollbar {
+    width:13px;
+    height:13px;
+}
+.bury-post::-webkit-scrollbar {
+    background-color:transparent;
+}
+.bury-post::-webkit-scrollbar-track {
+    border: 6px solid #fbfbfb;
+    background-color: #fff;
+}
+.bury-post::-webkit-scrollbar-thumb {
+    border: 6px solid #fbfbfb;
+    background-color: var(--accent);
+}
+
+.bury-post p {
+  text-indent: 50px;
+}
+
+.bury-post b {
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.bury-tag {
+  margin: 20px auto ;
+}
+
+.bury-tag a {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid rgba(35, 35, 35, 0.5);
+  color: var(--accent);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: var(--bodyreg);
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bury-tag a:before {
+    content: "#";
+    color: rgba(0,0,0,.8);
+}
+
+.insideme-lyrics {position: absolute;
+  max-width: 400px;
+  max-height: 100px;
+  line-height: 102%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  font-family: var(--titlemedium);
+  font-size: 40px;
+  border: 8px solid var(--accenthalf);
+  padding-top: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-shadow:
+   -1px -1px 0 #2d2d2d,  
+    1px -1px 0 #2d2d2d,
+    -1px 1px 0 #2d2d2d,
+     1px 1px 0 #2d2d2d;
+ }
