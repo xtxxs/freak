@@ -6,7 +6,6 @@
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="TweenMax.min.js"></script>
     <script type="text/javascript" src="vue.global.js"></script>
-    <link rel="var" href="freak2.html">
   <style>
       @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
@@ -190,16 +189,16 @@
 <body>
     <div class="container">
         <div class="signin-container" id="cont1">
-            <h2>What are you looking at?</h2>
+            <h2>Already have a permissions?</h2>
             <p>
-                Private Space
+                xatspace private 
             </p>
             <button id="login">Return</button>
         </div>
         <div class="signin-container">
-            <h2>What are you looking at?</h2>
+            <h2>Already have a permissions?</h2>
             <p>
-                Bye!
+                xatspace private
             </p>
             <p id="attempts2">  </p>
             <p id="attempts">Attempts: 3</p>
@@ -208,7 +207,7 @@
         <div class="overlay" id="slide">
             <div class="form-container signup-form">
                 <form action="">
-                    <h3>Innquisitor</h3>
+                    <h3>Invitation code</h3>
                     <div class="social-container">
                         <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social">
@@ -217,23 +216,23 @@
                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="input-container">
-                        <input type="text" placeholder="" value="Freak" readonly="true">
+                        <input type="text" placeholder="" value="Freak" readonly="true" />
                     </div>
                     <div class="input-container">
-                        <input id="password" type="text" placeholder="password">
+                        <input id="password" type="text" placeholder="Password" />
                     </div>
-
-
+                    <a class="form-button" href="freak2.html"onclick="comprobarClave()" type="button"></button>
+                    
                     <button class="form-button" onclick="comprobarClave()" type="button">
-                        Access
+                        Login
                         <script>
                             var x = 3;
                             function comprobarClave() {
                                 clave1 = document.getElementById("password").value;
 
-                                if (clave1 == "Sukuna") {
+                                if (clave1 == "sukuna") {
                                     var url = "freak2.html";
-                                    $(location).attr('href', url:);
+                                    $(location).attr('href', url);
                                 }
                                 else {/* document.getElementById("accd").textContent = "ACCESS DENIED";*/
                                     x--;
